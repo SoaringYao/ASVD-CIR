@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use ASVD, please cite the paper below."
+title: ASVD
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Yao
+    given-names: Suhang
+  - family-names: Li
+    given-names: Xin
+  - family-names: Wang
+    given-names: Xijun
+  - family-names: Wang
+    given-names: Yufei
+  - family-names: Jin
+    given-names: Yeying
+  - family-names: Chen
+    given-names: Zhibo
+preferred-citation:
+  type: article
+  title: "Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition"
+  authors:
+    - family-names: Yao
+      given-names: Suhang
+    - family-names: Li
+      given-names: Xin
+    - family-names: Wang
+      given-names: Xijun
+    - family-names: Wang
+      given-names: Yufei
+    - family-names: Jin
+      given-names: Yeying
+    - family-names: Chen
+      given-names: Zhibo
+  journal: "IEEE Journal on Emerging and Selected Topics in Circuits and Systems"
+  year: 2026
+  doi: 10.1109/JETCAS.2026.3745896
