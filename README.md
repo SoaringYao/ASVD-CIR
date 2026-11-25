@@ -1,8 +1,10 @@
-# ASVD
+# Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition
 
-Activation-Calibrated Singular Value Decomposition (ASVD) compresses pretrained linear and convolutional layers without retraining. It weights each layer’s matrix by mean absolute input and output activations, computes a truncated SVD, and absorbs the inverse scaling into the two factors. A weight matrix of shape `O × I` then uses `r(O + I)` weights and MACs per output position in place of `OI`. For a convolution, `I = C_in × k_h × k_w`, and inference applies a spatial convolution followed by a 1×1 convolution.
+Suhang Yao, Xin Li, Xijun Wang, Yufei Wang, Yeying Jin, and Zhibo Chen
 
-This repository implements the method from *Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition* (Yao et al., IEEE JETCAS, 2026). The paper evaluates ASVD on PromptCIR for JPEG restoration with unknown compression quality. [arXiv](https://arxiv.org/abs/2610.29959) · [IEEE DOI](https://doi.org/10.1109/JETCAS.2026.3745896)
+**Accepted for publication in IEEE JETCAS (2026)** · [IEEE Xplore](https://doi.org/10.1109/JETCAS.2026.3745896) · [arXiv](https://arxiv.org/abs/2610.29959)
+
+ASVD uses input and output activation magnitudes to compute low-rank factors for pretrained linear and convolutional layers. Calibration and factorization run offline, with no retraining. This repository includes a PyTorch implementation and a [PromptCIR example](#promptcir-example) for blind JPEG restoration.
 
 ## Installation
 
